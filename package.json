@@ -1,0 +1,44 @@
+{
+  "name": "boilerplate-react-app",
+  "version": "1.0.0",
+  "description": "Boilerplate React app",
+  "main": "server.js",
+  "repository": "https://github.com/mariojuretic/boilerplate-react-app",
+  "author": "Mario Juretić",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack",
+    "dev-server": "webpack-dev-server",
+    "heroku-postbuild": "yarn run build",
+    "start": "node server/server.js",
+    "test": "jest --config=jest.config.json"
+  },
+  "dependencies": {
+    "@babel/core": "7.1.2",
+    "@babel/polyfill": "7.0.0",
+    "@babel/preset-env": "7.1.0",
+    "@babel/preset-react": "7.0.0",
+    "babel-loader": "8.0.4",
+    "babel-plugin-transform-class-properties": "6.24.1",
+    "babel-plugin-transform-object-rest-spread": "6.26.0",
+    "css-loader": "1.0.0",
+    "express": "4.16.4",
+    "mini-css-extract-plugin": "0.4.4",
+    "node-sass": "4.9.4",
+    "react": "16.5.2",
+    "react-dom": "16.5.2",
+    "sass-loader": "7.1.0",
+    "webpack": "4.21.0"
+  },
+  "devDependencies": {
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "23.6.0",
+    "enzyme": "3.7.0",
+    "enzyme-adapter-react-16": "1.6.0",
+    "enzyme-to-json": "3.3.4",
+    "jest": "23.6.0",
+    "raf": "3.4.0",
+    "webpack-cli": "3.1.2",
+    "webpack-dev-server": "3.1.9"
+  }
+}
